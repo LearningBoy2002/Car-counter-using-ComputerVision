@@ -1,0 +1,19 @@
+So how the code works is that
+first it takes the footage from the path
+
+then it uses yolo8 small model to detect the things around
+
+so here we have given a list of objects names which we use to compare with yolo's detected 
+and then by using cv zone we have made a rectangle around the detected objects
+
+then using if else statements we have only targeted specific vechicles to be detected and show it
+
+then we have masked the unwanted areas as by just layiring it over the footage
+
+then we use a coustom sorting tracking program from git hub to track the trageted objected so as to count it
+
+now we have used a list to track the ids of the detected vechicles
+
+then we have placed a virtual line where when the point of the tracted object touches it gets counted
+
+we have used cuda software for using GPU for better performance
